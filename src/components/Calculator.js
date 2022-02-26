@@ -47,6 +47,7 @@ const Calculator = () => {
   }
 
   const handleEqualsOperator = () => {
+    // eslint-disable-next-line no-eval
     let res = eval(formula.join(''));
     setResult(res);
   }
